@@ -79,7 +79,7 @@ alert.show()
 * Swift 3.0+
 
 ## Author
-[Connected2.me](http://connected2.me) / [Berk Kaya](mailto: berkkaya88@gmail.com)
+[Connected2.me](http://connected2.me) / <a href="mailto:berkkaya88@gmail.com">Berk Kaya</a>
 
 ## License
 
