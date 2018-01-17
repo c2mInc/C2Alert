@@ -79,7 +79,7 @@ alert.show()
 * Swift 3.0+
 
 ## Author
-[C2MInc](http://connected2.me)
+[Connected2.me](http://connected2.me) / [Berk Kaya](mailto: berkkaya88@gmail.com)
 
 ## License
 
