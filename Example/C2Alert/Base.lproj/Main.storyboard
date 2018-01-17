@@ -20,7 +20,71 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5V-S3-yeX">
+                                <rect key="frame" x="20" y="597" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="auu-nf-4lK"/>
+                                </constraints>
+                                <state key="normal" title="Show Message">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnMessageClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="77A-92-C7G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sk-j4-rEd">
+                                <rect key="frame" x="20" y="539" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="YXm-E0-szB"/>
+                                </constraints>
+                                <state key="normal" title="Show Alert with Icon">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAlertIconClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Jpa-6F-w22"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CuN-4Z-a6j">
+                                <rect key="frame" x="20" y="481" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cGX-Fq-edp"/>
+                                </constraints>
+                                <state key="normal" title="Show Alert with Icon V2">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAlertIcon2Click:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GWM-7t-a5s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKW-Ge-vGE">
+                                <rect key="frame" x="20" y="423" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="TDU-cR-8Nw"/>
+                                </constraints>
+                                <state key="normal" title="Show Alert Without Icon">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAlertNoIcon:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IV3-Ct-KMZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="J5V-S3-yeX" secondAttribute="bottom" constant="20" id="9ve-fK-ArH"/>
+                            <constraint firstItem="3sk-j4-rEd" firstAttribute="top" secondItem="CuN-4Z-a6j" secondAttribute="bottom" constant="8" id="CkY-Ae-X08"/>
+                            <constraint firstAttribute="trailing" secondItem="IKW-Ge-vGE" secondAttribute="trailing" constant="20" id="KgV-Fr-71W"/>
+                            <constraint firstItem="J5V-S3-yeX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Kxr-5S-5GG"/>
+                            <constraint firstAttribute="trailing" secondItem="J5V-S3-yeX" secondAttribute="trailing" constant="20" id="Mkb-zY-TgV"/>
+                            <constraint firstItem="3sk-j4-rEd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Ndg-kE-P1l"/>
+                            <constraint firstAttribute="trailing" secondItem="3sk-j4-rEd" secondAttribute="trailing" constant="20" id="RCd-ZZ-296"/>
+                            <constraint firstItem="CuN-4Z-a6j" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="UEU-83-Ndx"/>
+                            <constraint firstItem="IKW-Ge-vGE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="YJp-ui-3IK"/>
+                            <constraint firstItem="J5V-S3-yeX" firstAttribute="top" secondItem="3sk-j4-rEd" secondAttribute="bottom" constant="8" id="ZrF-lt-Po8"/>
+                            <constraint firstAttribute="trailing" secondItem="CuN-4Z-a6j" secondAttribute="trailing" constant="20" id="edf-Xp-TDO"/>
+                            <constraint firstItem="CuN-4Z-a6j" firstAttribute="top" secondItem="IKW-Ge-vGE" secondAttribute="bottom" constant="8" id="vqv-Wb-DIJ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

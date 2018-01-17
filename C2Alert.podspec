@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'C2Alert'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of C2Alert.'
+  s.summary          = 'C2Alert is a simple alert library with good and customizable design.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,17 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+C2Alert is a simple alert library with good and customizable design. It has small size but greatly serves on the purpose.
                        DESC
 
-  s.homepage         = 'https://github.com/Berk-Kaya/C2Alert'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/c2mInc/C2Alert'
+  s.screenshots     = 'https://cdn.pbrd.co/images/H3jkuoO.gif', 'https://cdn.pbrd.co/images/H3jkk8H.gif', 'https://cdn.pbrd.co/images/H3jkL7X.gif', 'https://cdn.pbrd.co/images/H3jjN6h.gif'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Berk-Kaya' => 'berkkaya88@gmail.com' }
-  s.source           = { :git => 'https://github.com/Berk-Kaya/C2Alert.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+s.author           = { 'Connected2.me' => 'http://connected2.me' }
+  s.source           = { :git => 'https://github.com/c2mInc/C2Alert.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/connected2me'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'C2Alert/Classes/**/*'
   
@@ -37,6 +37,6 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
