@@ -1,6 +1,6 @@
 # C2Alert
 
-[![CI Status](http://img.shields.io/travis/Berk-Kaya/C2Alert.svg?style=flat)](https://travis-ci.org/Berk-Kaya/C2Alert)
+[![CI Status](http://img.shields.io/travis/c2mInc/C2Alert.svg?style=flat)](https://travis-ci.org/c2mInc/C2Alert)
 [![Version](https://img.shields.io/cocoapods/v/C2Alert.svg?style=flat)](http://cocoapods.org/pods/C2Alert)
 [![License](https://img.shields.io/cocoapods/l/C2Alert.svg?style=flat)](http://cocoapods.org/pods/C2Alert)
 [![Platform](https://img.shields.io/cocoapods/p/C2Alert.svg?style=flat)](http://cocoapods.org/pods/C2Alert)
