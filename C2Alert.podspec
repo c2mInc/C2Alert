@@ -24,7 +24,7 @@ C2Alert is a simple alert library with good and customizable design. It has smal
   s.homepage         = 'https://github.com/c2mInc/C2Alert'
   s.screenshots     = 'https://cdn.pbrd.co/images/H3jkuoO.gif', 'https://cdn.pbrd.co/images/H3jkk8H.gif', 'https://cdn.pbrd.co/images/H3jkL7X.gif', 'https://cdn.pbrd.co/images/H3jjN6h.gif'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-s.author           = { 'Connected2.me' => 'http://connected2.me' }
+  s.author           = { 'Connected2.me' => 'http://connected2.me' }
   s.source           = { :git => 'https://github.com/c2mInc/C2Alert.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/connected2me'
 
@@ -32,9 +32,9 @@ s.author           = { 'Connected2.me' => 'http://connected2.me' }
 
   s.source_files = 'C2Alert/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'C2Alert' => ['C2Alert/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'C2Alert' => ['C2Alert/Assets/**/*.png']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
