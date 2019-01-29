@@ -144,7 +144,7 @@ public class C2Alert: UIView {
     private func createBlurOverlay() {
         backgroundView.frame = frame
         //Blur Effect
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.dark)
+        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
         blurEffectView.frame = frame
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
