@@ -39,6 +39,8 @@ public class C2Alert: UIView {
     public var overlay = true
     public var blurOverlay = false
     
+    public var iconWithoutTintColor = false
+    
     //animation duration
     public var duration = 0.33
 
@@ -94,6 +96,14 @@ public class C2Alert: UIView {
         self.title = title
         self.message = message
         self.image = image
+    }
+    
+    public convenience init(title:String, message: String, image:UIImage, iconWithoutTintColor: Bool) {
+        self.init(frame: UIScreen.main.bounds)
+        self.title = title
+        self.message = message
+        self.image = image
+        self.iconWithoutTintColor = iconWithoutTintColor
     }
     
     public convenience init(title:String, image:UIImage) {
@@ -181,10 +191,15 @@ public class C2Alert: UIView {
     }
     
     private func createImage(image: UIImage) {
-        imageView.image = image.withRenderingMode(.alwaysTemplate)
+        if iconWithoutTintColor{
+            imageView.image = image
+        }else{
+            imageView.image = image.withRenderingMode(.alwaysTemplate)
+            imageView.tintColor = self.dialogImageColor
+        }
+        imageView.image = iconWithoutTintColor ? image : image.withRenderingMode(.alwaysTemplate)
         imageView.frame.origin.y = height
         imageView.frame.size = imageSize
-        imageView.tintColor = self.dialogImageColor
         handleSize(size: imageSize)
         dialogView.addSubview(imageView)
     }
