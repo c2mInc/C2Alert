@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         imageView.frame = view.frame
         view.addSubview(imageView)
-        view.sendSubview(toBack: imageView)
+        view.sendSubviewToBack(imageView)
     }
     
     @IBAction func btnMessageClick(_ sender: Any) {
