@@ -31,7 +31,7 @@ pod 'C2Alert'
 
 | C2Alert Version   |      Swift Version      |    Min. iOS Version      |
 |----------|:-------------:|:-------------:|
-| => 0.1.0  |  Swift 3  | >= iOS 9.0  |
+| => 0.1.1  |  Swift 5  | >= iOS 9.0  |
 
 ## Getting started
 
@@ -68,6 +68,7 @@ alert.overlayOpacity = 0.3 // default 0.6
 alert.paddingFromSides = 30 // default 32
 alert.seperatorHeight = 8 // Space between title, message and image
 alert.paddingTopAndBottom = 22 // default 24
+alert.iconWithoutTintColor = true // default false. Use 'true' for custom image without tint
 alert.show()
 
 ```
@@ -76,7 +77,7 @@ alert.show()
 
 * iOS 9.0+
 * Xcode 8.0+
-* Swift 3.0+
+* Swift 5.0+
 
 ## Author
 [Connected2.me](http://connected2.me) / <a href="mailto:berkkaya88@gmail.com">Berk Kaya</a>
